@@ -1,0 +1,131 @@
+<!-- // create a business name generator by combining list of adjectives and shop name and another word 
+// adjectives:
+// crazy 
+// amazing fire  -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let rand = Math.random()
+        let first, second, third;
+        // 0 0.33 0.66 1
+
+        // let generate the first word
+        if(rand<0.33){
+            first = "crazy"
+        }
+        else if(rand<0.66 && rand>=0.33){
+            first = "amazing"
+        }
+        else{
+            first = "fire"
+        }
+
+        // let generate the second word 
+
+
+        if(rand<0.33){
+            second = "engine"
+        }
+        else if(rand<0.66 && rand>=0.33){
+            second = "foods"
+        }
+        else{
+            second = "garments"
+        }
+
+        // let generate the third word 
+
+        if(rand<0.33){
+            third = "bros"
+        }
+        else if(rand<0.66 && rand>=0.33){
+            third = "limited"
+        }
+        else{
+            third = "Hub"
+        }
+
+        console.log('${first} ${second} ${third}')
+
+
+    </script>
+    
+</body>
+</html> -->
+
+
+
+<!-- exercise11: calculate the factorial using  reduce and for loop javascript
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        // function calculateFactorial(n){
+        //     if(n<0) {
+        //         return "Factorial is not defined for negative numbers. ";
+        //     }
+        //     else if (n == 0 || n == 1){
+        //         return 1;
+        //     }
+        //     else{
+        //        let factorial = 1;
+        //        for(let i = 2; i <= n; i++){
+        //         factorial *= i;
+        //        }
+        //        return factorial;
+        //     }
+        // }
+        // const result = calculateFactorial(6);
+        // console.log(result);
+
+        let a = 6;
+        
+        function factorial(number){
+             let arr = Array.from(Array(number+1).keys())
+             console.log(arr.slice(1,))
+
+             let c = arr.slice(1,).reduce((a, b)=>{
+                return a*b
+             })
+
+             console.log(c)
+        }
+        factorial(a)
+        
+    </script>
+ </body>
+ </html>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
